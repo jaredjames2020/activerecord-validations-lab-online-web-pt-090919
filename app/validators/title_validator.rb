@@ -1,6 +1,7 @@
 class TitleValidator < ActiveModel::Validator
 
   def validate(record)
+    binding.pry
     unless record.title.include?(["Won't Believe", "Secret", "Top [number]", "Guess"])
       record.errors[:title] << "Nope!"
     end

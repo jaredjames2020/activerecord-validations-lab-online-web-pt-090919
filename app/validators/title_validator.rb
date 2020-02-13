@@ -1,6 +1,6 @@
 class TitleValidator < ActiveModel::Validator
 
-  def validate
+  def validate(record)
   end
 
 end

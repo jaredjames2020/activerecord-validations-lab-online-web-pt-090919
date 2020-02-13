@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
   
-  validates 
+  validates :content, 
   
 end

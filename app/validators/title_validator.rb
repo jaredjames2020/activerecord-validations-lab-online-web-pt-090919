@@ -1,8 +1,8 @@
 class TitleValidator < ActiveModel::Validator
 
   def validate(record)
-    unless record.title.match?([])
-      record.errors[:name] << "We're only allowed to have people who work for the company in the database!"
+    unless record.title.match?(["Won't Believe", "Secret", "Top [number]", or "Guess"])
+      record.errors[:title] << "Nope!"
     end
   end
 
